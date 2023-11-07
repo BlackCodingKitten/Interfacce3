@@ -1,0 +1,29 @@
+.Plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.Plan{
+    border: .1rem solid transparent; 
+    transition: #01959a 0.3s ease-in-out;
+}
+
+.trip-card:hover{
+    border-color: #01959a;
+
+}
+
+@media screen and (max-width:850px) {
+    .Plan{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media screen and (max-width:412px) {
+    .Plan{
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+}

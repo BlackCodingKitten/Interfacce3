@@ -1,0 +1,128 @@
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 320px;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0, .25);
+    width: 45%;
+    height: 500px;
+    border-radius: 13px;
+    
+    z-index: 100;  
+    color: #2a2a2a;
+
+}
+
+.sign-up h1{
+    height: 3rem;
+    padding: 0 1rem;
+    margin-bottom:2rem;
+}
+
+.sign-up button{
+    display: inline;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    border-radius: 0.3rem;  
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-color: #2a2a2a;
+    margin: auto;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+.sign-up .sign-up-btn:hover{
+    background-color:  #01959a;
+    color:#fff;
+}
+
+.sign-up label{
+    justify-content: start;
+    padding-bottom: 1.2rem;
+}
+
+.sign-up-data{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+
+}
+
+
+.sign-up-data input{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    white-space: nowrap;
+    width: 100%;
+    margin: auto;
+    height: 2rem;
+    padding: 0 1rem;
+    margin-bottom: 0.3rem;
+    border-radius: .4rem;
+    border: 1px solid #2a2a2a;
+}
+
+.sign-up-data input:focus{
+    border-color: #01959a;
+    box-shadow: 0 0 3px #01959a;
+    outline: .5px solid #01959a;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .7);
+    z-index: 100;
+}
+
+.big-screen-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.big-screen-display h1{
+    justify-content: start;
+}
+
+.btn-in-row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.btn-in-row button{
+    width: 100%;
+    margin: 0 .3rem;
+    margin-top: -3rem;
+}
+
+@media screen and (max-width: 856px){
+    .sign-up h1{
+        margin-bottom: .5rem;
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .sign-up{
+        display: none;
+    }
+    .overlay{
+        display: none;
+    }
+}
+

@@ -1,0 +1,160 @@
+.mobile-container{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 10rem 4rem 10rem;
+    align-items: center;
+    text-align: start;
+}
+
+.mobile-container h1{
+    width: 100%;
+    margin-top: 7.5rem;
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+}
+
+.mobile-container label{
+    font-size: 2rem;
+}
+
+.mobile-container input{
+    width: 100%;
+    height: 1.9rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+    border-radius: .2rem;
+    border: 1px solid #2a2a2a;
+}
+
+.mobile-container input:focus{
+    border-color: #01959a;
+    box-shadow: 0 0 3px #01959a;
+    outline: .5px solid #01959a;
+}
+
+.mobile-container button{
+    height: 2.5rem;
+    width: 100%;
+    margin-top: 2rem;
+    display: inline;
+}
+
+.mobile-show{
+    display: inline;
+    margin-top: 0.8rem;
+}
+
+.mobile-not-show{
+    display: none;
+}
+
+.close-button-hidden{
+    display: none;
+}
+
+.close-button{
+    display:inline;
+    width: 100%;
+}
+
+.rw-btn1{
+    display: inline;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.rw-btn1 button{
+    height: 3rem;
+    font-size: 1.2rem;
+}
+
+.sign-up-botton-mobile button{
+    display: none;
+    background-color: #01959a;
+    color: #fff;
+}
+
+.sign-up-back{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;  
+}
+.sign-up-back a{
+    text-decoration: none;
+    color: #2a2a2a;
+}
+.sign-up-back button{
+    align-items: end;
+    width: 100%;
+    height: 3rem;
+    margin: 1rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:850px) and (min-width:401px){
+    .mobile-container input{
+        height: 2.6rem;
+        font-size: 1.4rem;
+    }
+    .close-button-hidden{
+        display: none;
+    }
+    
+    .close-button{
+        display: inline;
+    }
+    .sign-up-back .sign-up-botton-mobile{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .sign-up-botton-mobile button{
+        display: inline;
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+    .mobile-container button{
+        font-size: 1.2rem;
+        display: inline;
+        margin-bottom: 0.5rem;
+        height: 2.5rem;
+    }
+    .mobile-container h1{
+        margin-top: 7.5rem;
+        font-size: 2.8rem;
+        margin-bottom: 1.4rem;
+    }
+    .mobile-container{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .mobile-container label{
+        font-size: 1.3rem;
+    }
+    .mobile-container input{
+        font-size: 0.9rem;
+        height: 2rem;
+        margin-bottom: .5rem;
+    }
+    .close-button-hidden{
+        display: none;
+    }
+    
+    .sign-up-botton-mobile{
+        margin-bottom: 0rem;
+    }
+
+    .rw-btn1{
+        margin-bottom: .8rem;
+    }
+
+    .close-button{
+        display: inline;
+    }
+
+
+}
